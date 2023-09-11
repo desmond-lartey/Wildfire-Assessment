@@ -71,7 +71,7 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type):
         
         # Stacked bar chart for comparative analysis
         if chart_type == "bar":
-            fig, ax = plt.subplots(figsize=(12, 8))
+            fig, ax = plt.subplots(figsize=(15, 8))
             response_counts.plot(kind="bar", stacked=True, colormap="viridis", ax=ax)
             ax.set_title(f"Comparative Analysis of '{question1}' by {demo}", fontsize=14)
             ax.set_ylabel("Number of Respondents", fontsize=12)
