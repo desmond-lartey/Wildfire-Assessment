@@ -10,14 +10,20 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load the merged and categorized dataset
+# Function to load the dataset
 def load_data():
     return pd.read_excel("Updated_Merged_Categorized_South_Africa_Wildland_Fire_Survey2.xlsx")
 
 merged_data_df = load_data()
 
+# Adjusting aesthetics for better clarity
+sns.set_style("whitegrid")
+
 # Side Bar
 st.sidebar.title("User Selection")
+
+# Display mode
+display_mode = st.sidebar.radio("Choose display mode:", ("Side by Side", "Full Screen"))
 
 # Select category
 categories = merged_data_df["Category"].unique().tolist()
@@ -47,30 +53,22 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type):
     # Filtering data based on the selected questions and demographic
     q1_data = merged_data_df[merged_data_df["Question"] == question1]
     
-    # Set larger font sizes
-    sns.set(font_scale=1.2)
-    
     if analysis_type == "correlation":
         q2_data = merged_data_df[merged_data_df["Question"] == question2]
-        # Merging the two questions on Respondent ID
         merged_q_data = pd.merge(q1_data, q2_data, on="Respondent ID", how="inner", suffixes=('_q1', '_q2'))
         crosstab_data = pd.crosstab(merged_q_data["Response_q1"], merged_q_data["Response_q2"])
-        
-        # Plotting heatmap for correlation
+
         if chart_type == "heatmap":
             fig, ax = plt.subplots(figsize=(15, 10))
-            sns.heatmap(crosstab_data, annot=True, cmap="YlGnBu", cbar=True, ax=ax, fmt="g")
+            sns.heatmap(crosstab_data, annot=True, cmap="YlGnBu", cbar=True, ax=ax)
             ax.set_title(f"Correlation between '{question1}' and '{question2}' by {demo}", fontsize=16)
             ax.set_ylabel("Responses to " + question1, fontsize=14)
             ax.set_xlabel("Responses to " + question2, fontsize=14)
             plt.tight_layout()
             st.pyplot(fig)
-    
     elif analysis_type == "comparative":
-        # Comparative analysis for a single question across the chosen demographic
         response_counts = q1_data.groupby(demo)["Response"].value_counts().unstack().fillna(0)
         
-        # Stacked bar chart for comparative analysis
         if chart_type == "bar":
             fig, ax = plt.subplots(figsize=(15, 10))
             response_counts.plot(kind="bar", stacked=True, colormap="viridis", ax=ax)
@@ -80,27 +78,37 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type):
             ax.legend(title="Responses", bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=12)
             plt.tight_layout()
             st.pyplot(fig)
-        
-        # Pie chart for comparative analysis
         elif chart_type == "pie":
             for demo_value, group in q1_data.groupby(demo):
-                fig, ax = plt.subplots(figsize=(12, 9))
-                group["Response"].value_counts().plot(kind="pie", autopct='%1.1f%%', startangle=140, ax=ax, fontsize=12)
+                fig, ax = plt.subplots(figsize=(12, 8))
+                group["Response"].value_counts().plot(kind="pie", autopct='%1.1f%%', startangle=140, ax=ax)
                 ax.set_title(f"Responses for '{question1}' in {demo} = {demo_value}", fontsize=16)
                 ax.set_ylabel("")
                 plt.tight_layout()
                 st.pyplot(fig)
-        
-        # Line chart for comparative analysis
         elif chart_type == "line":
             fig, ax = plt.subplots(figsize=(15, 10))
             response_counts.T.plot(ax=ax)
             ax.set_title(f"Comparative Analysis of '{question1}' by {demo}", fontsize=16)
             ax.set_ylabel("Number of Respondents", fontsize=14)
             ax.set_xlabel("Responses", fontsize=14)
-            ax.legend(title=demo, fontsize=12)
+            ax.legend(title=demo)
             plt.tight_layout()
             st.pyplot(fig)
+
+# Main Content
+st.title("South Africa Wildland Fire Survey Analysis")
+if st.sidebar.button("Plot"):
+    plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type)
+    
+    if display_mode == "Side by Side":
+        col1, col2 = st.beta_columns(2)
+        with col1:
+            pass  # Your plot will already be displayed in the function above
+        with col2:
+            st.write("Your text or other content goes here.")
+    else:
+        pass  # Full screen mode: Only the plot will be displayed
 
 # Main Content
 st.title("South Africa Wildland Fire Survey Analysis")
