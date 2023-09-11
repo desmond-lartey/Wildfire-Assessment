@@ -13,7 +13,7 @@ import seaborn as sns
 # Load the merged and categorized dataset
 
 def load_data():
-    return merged_data_df = pd.read_excel("Updated_Merged_Categorized_South_Africa_Wildland_Fire_Survey2.xlsx")
+    return pd.read_excel("Updated_Merged_Categorized_South_Africa_Wildland_Fire_Survey2.xlsx")
 
 
 merged_data_df = load_data()
