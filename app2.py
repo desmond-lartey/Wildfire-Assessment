@@ -87,6 +87,7 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type):
             ax.legend(title=demo)
             plt.tight_layout()
             st.pyplot(fig)
+display_mode = st.radio("Choose display mode:", ["Side by Side", "Single View"])
 
 # Main Content
 st.title("South Africa Wildland Fire Survey Analysis")
