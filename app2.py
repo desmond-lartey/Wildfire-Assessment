@@ -4,49 +4,41 @@
 # In[4]:
 
 
-# Importing necessary libraries
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Function to load the dataset
 def load_data():
     return pd.read_excel("Updated_Merged_Categorized_South_Africa_Wildland_Fire_Survey2.xlsx")
 
 merged_data_df = load_data()
 
-# Adjusting aesthetics for better clarity
-sns.set_style("whitegrid")
-
 # Side Bar
 st.sidebar.title("User Selection")
 
-# Display mode
-display_mode = st.sidebar.radio("Choose display mode:", ("Side by Side", "Full Screen"))
-
 # Select category
 categories = merged_data_df["Category"].unique().tolist()
-selected_category = st.sidebar.selectbox("Select a category:", categories)
+selected_category = st.sidebar.selectbox("Select a category:", categories, key="category_selector")
 
 # List questions based on selected category
 questions = merged_data_df[merged_data_df["Category"] == selected_category]["Question"].unique().tolist()
-selected_question_1 = st.sidebar.selectbox("Select the first question:", questions)
+selected_question_1 = st.sidebar.selectbox("Select the first question:", questions, key="question_1_selector")
 
-analysis_type = st.sidebar.radio("Choose the type of analysis:", ("correlation", "comparative"))
+analysis_type = st.sidebar.radio("Choose the type of analysis:", ("correlation", "comparative"), key="analysis_type_selector")
 
 # If correlation, allow the selection of a second question
 if analysis_type == "correlation":
-    selected_question_2 = st.sidebar.selectbox("Select the second question:", [q for q in questions if q != selected_question_1])
+    selected_question_2 = st.sidebar.selectbox("Select the second question:", [q for q in questions if q != selected_question_1], key="question_2_selector")
 else:
     selected_question_2 = None
 
 # Choose demographic and chart type
 demographics = ["Race", "Gender", "Province", "Occupation"]
-selected_demo = st.sidebar.selectbox("Choose a demographic:", demographics)
+selected_demo = st.sidebar.selectbox("Choose a demographic:", demographics, key="demo_selector")
 
 chart_types = ["heatmap", "bar", "pie", "line"]
-selected_chart_type = st.sidebar.selectbox("Choose a chart type:", chart_types)
+selected_chart_type = st.sidebar.selectbox("Choose a chart type:", chart_types, key="chart_type_selector")
 
 # Function to plot correlation or comparative analysis
 def plot_analysis(question1, question2, demo, chart_type, analysis_type):
@@ -112,6 +104,5 @@ if st.sidebar.button("Plot"):
 
 # Main Content
 st.title("South Africa Wildland Fire Survey Analysis")
-if st.sidebar.button("Plot"):
+if st.sidebar.button("Plot", key="plot_button"):
     plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type)
-
