@@ -70,13 +70,13 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type):
         
         # Stacked bar chart for comparative analysis
         if chart_type == "bar":
-            fig, ax = plt.subplots(figsize=(18, 12))
+            fig, ax = plt.subplots(figsize=(20, 12))
             response_counts.plot(kind="bar", stacked=True, colormap="viridis", ax=ax)
-            ax.set_title(f"Comparative Analysis of '{question1}' by {demo}", fontsize=16)
-            ax.set_ylabel("Number of Respondents", fontsize=18)
+            ax.set_title(f"Comparative Analysis of '{question1}' by {demo}", fontsize=20)
+            ax.set_ylabel("Number of Respondents", fontsize=25)
             ax.set_xlabel(demo, fontsize=14)
             ax.legend(title="Responses", bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=18)
-            ax.tick_params(axis='both', which='major', labelsize=12)
+            ax.tick_params(axis='both', which='major', labelsize=16)
             plt.tight_layout()
             st.pyplot(fig)
         
