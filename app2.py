@@ -75,7 +75,7 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type):
             ax.set_title(f"Comparative Analysis of '{question1}' by {demo}", fontsize=14)
             ax.set_ylabel("Number of Respondents", fontsize=12)
             ax.set_xlabel(demo, fontsize=12)
-            ax.legend(title="Responses", bbox_to_anchor=(1.05, 1), loc='upper left')
+            #ax.legend(title="Responses", bbox_to_anchor=(1.05, 1), loc='upper left')
             plt.tight_layout()
             st.pyplot(fig)
         
