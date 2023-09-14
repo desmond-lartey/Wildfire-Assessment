@@ -104,3 +104,13 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type, top_n=2
 st.title("South Africa Wildland Fire Survey Analysis")
 if st.sidebar.button("Plot"):
     plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type)
+
+# Adding copyright notice
+st.write("---")
+st.write("© 2023 Desmond Lartey")
+
+# Adding clickable logos for email, Twitter, and LinkedIn
+email_link = "[![Email](https://img.icons8.com/fluent/48/000000/email.png)](mailto:larteydesmond@gmail.com)"
+twitter_link = "[![Twitter](https://img.icons8.com/fluent/48/000000/twitter.png)](https://twitter.com/Desmondlartey17)"
+linkedin_link = "[![LinkedIn](https://img.icons8.com/fluent/48/000000/linkedin.png)](https://www.linkedin.com/in/desmond-lartey/)"
+st.markdown(email_link + " " + twitter_link + " " + linkedin_link, unsafe_allow_html=True)
