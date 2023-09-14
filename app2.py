@@ -105,9 +105,9 @@ st.title("South Africa Wildland Fire Survey Analysis")
 if st.sidebar.button("Plot"):
     plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type)
 
-# Adding copyright notice
-st.write("---")
-st.write("© 2023 Desmond Lartey")
+# Adding copyright notice to sidebar
+st.sidebar.write("---")
+st.sidebar.write("© 2023 Desmond Lartey")
 
 # Adding clickable logos for email, Twitter, and LinkedIn
 email_link = "[![Email](https://img.icons8.com/fluent/48/000000/email.png)](mailto:larteydesmond@gmail.com)"
