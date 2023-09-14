@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
-
-
 # Importing necessary libraries
 import streamlit as st
 import pandas as pd
@@ -44,7 +41,7 @@ chart_types = ["heatmap", "bar", "pie", "line"]
 selected_chart_type = st.sidebar.selectbox("Choose a chart type:", chart_types)
 
 # Function to plot correlation or comparative analysis
-def plot_analysis(question1, question2, demo, chart_type, analysis_type):
+def plot_analysis(question1, question2, demo, chart_type, analysis_type, top_n=10):
     # Filtering data based on the selected questions and demographic
     q1_data = merged_data_df[merged_data_df["Question"] == question1]
     
@@ -68,14 +65,17 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type):
         # Comparative analysis for a single question across the chosen demographic
         response_counts = q1_data.groupby(demo)["Response"].value_counts().unstack().fillna(0)
         
+        # Get top N responses for the legend
+        top_responses = response_counts.sum(axis=0).nlargest(top_n).index.tolist()
+        
         # Stacked bar chart for comparative analysis
         if chart_type == "bar":
             fig, ax = plt.subplots(figsize=(12, 8))
-            response_counts.plot(kind="bar", stacked=True, colormap="viridis", ax=ax)
+            response_counts[top_responses].plot(kind="bar", stacked=True, colormap="viridis", ax=ax)
             ax.set_title(f"Comparative Analysis of '{question1}' by {demo}", fontsize=14)
             ax.set_ylabel("Number of Respondents", fontsize=12)
             ax.set_xlabel(demo, fontsize=12)
-            #ax.legend(title="Responses", bbox_to_anchor=(1.05, 1), loc='upper left')
+            ax.legend(title=f"Top {top_n} Responses")
             plt.tight_layout()
             st.pyplot(fig)
         
@@ -104,10 +104,3 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type):
 st.title("South Africa Wildland Fire Survey Analysis")
 if st.sidebar.button("Plot"):
     plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type)
-
-
-# In[ ]:
-
-
-
-
