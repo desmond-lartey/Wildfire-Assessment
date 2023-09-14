@@ -113,4 +113,4 @@ st.sidebar.write("© 2023 Desmond Lartey")
 email_link = "[![Email](https://img.icons8.com/fluent/48/000000/email.png)](mailto:larteydesmond@gmail.com)"
 twitter_link = "[![Twitter](https://img.icons8.com/fluent/48/000000/twitter.png)](https://twitter.com/Desmondlartey17)"
 linkedin_link = "[![LinkedIn](https://img.icons8.com/fluent/48/000000/linkedin.png)](https://www.linkedin.com/in/desmond-lartey/)"
-st.markdown(email_link + " " + twitter_link + " " + linkedin_link, unsafe_allow_html=True)
+st.sidebar.markdown(email_link + " " + twitter_link + " " + linkedin_link, unsafe_allow_html=True)
