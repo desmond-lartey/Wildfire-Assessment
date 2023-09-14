@@ -41,7 +41,7 @@ chart_types = ["heatmap", "bar", "pie", "line"]
 selected_chart_type = st.sidebar.selectbox("Choose a chart type:", chart_types)
 
 # Function to plot correlation or comparative analysis
-def plot_analysis(question1, question2, demo, chart_type, analysis_type, top_n=10):
+def plot_analysis(question1, question2, demo, chart_type, analysis_type, top_n=20):
     # Filtering data based on the selected questions and demographic
     q1_data = merged_data_df[merged_data_df["Question"] == question1]
     
