@@ -6,6 +6,8 @@
 
 The **International Programs Office of the United States Forest Service** is undertaking a comprehensive assessment of the wildland fire situation across Africa. With the increasing demand for wildland fire-related programming worldwide, it's crucial to recognize that Africa is home to the highest proportion of fire-prone ecosystems globally. These assessments aim to provide a holistic understanding of fire on the landscape, its impacts, and the trade-offs of management actions.
 
+**[Check the Application version of the assessment here](https://wildfire-assessment.streamlit.app/)**
+
 ## Key Findings
 
 - Africa has the highest portion of fire-prone ecosystems in the world.
