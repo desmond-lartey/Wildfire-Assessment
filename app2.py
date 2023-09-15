@@ -115,4 +115,4 @@ twitter_link = "[![Twitter](https://img.icons8.com/fluent/48/000000/twitter.png)
 linkedin_link = "[![LinkedIn](https://img.icons8.com/fluent/48/000000/linkedin.png)](https://www.linkedin.com/in/desmond-lartey/)"
 st.sidebar.markdown(email_link + " " + twitter_link + " " + linkedin_link, unsafe_allow_html=True)
 # Link to the publication
-st.sidebar.markdown("Read our detailed [assessment publication](YOUR_LINK_HERE).") # Replace YOUR_LINK_HERE with the actual link to the publication
+st.sidebar.markdown("Read our detailed [assessment publication](https://github.com/desmond-lartey/Wildfire-Assessment/blob/Fires/README.md).") # Replace YOUR_LINK_HERE with the actual link to the publication
