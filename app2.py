@@ -107,7 +107,7 @@ if st.sidebar.button("Plot"):
 
 # Adding copyright notice to sidebar
 st.sidebar.write("---")
-st.sidebar.write("© 2023 Desmond Lartey")
+st.sidebar.write("© USDA Wildlandfire Assessment")
 
 # Adding clickable logos for email, Twitter, and LinkedIn
 email_link = "[![Email](https://img.icons8.com/fluent/48/000000/email.png)](mailto:larteydesmond@gmail.com)"
