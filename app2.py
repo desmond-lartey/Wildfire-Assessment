@@ -107,7 +107,7 @@ if st.sidebar.button("Plot"):
 
 # Adding copyright notice to sidebar
 st.sidebar.write("---")
-st.sidebar.write("© USDA Wildland fire Assessment")
+#st.sidebar.write("© USDA Wildland fire Assessment")
 
 # Adding clickable logos for email, Twitter, and LinkedIn
 email_link = "[![Email](https://img.icons8.com/fluent/48/000000/email.png)](mailto:larteydesmond@gmail.com)"
