@@ -125,5 +125,10 @@ This web app is maintained by Desmond Lartey.
 st.sidebar.markdown("Read our detailed [assessment publication](https://github.com/desmond-lartey/Wildfire-Assessment/blob/Fires/README.md).") # Replace YOUR_LINK_HERE with the actual link to the publication
 
 # Adding copyright notice to sidebar
-st.sidebar.write("---")
-st.sidebar.write("© USDA Wildland fire Assessment")
+#st.sidebar.write("---")
+#st.sidebar.write("© USDA Wildland fire Assessment")
+
+import datetime
+
+current_year = datetime.datetime.now().year
+st.sidebar.markdown(f"© {current_year} Copyright USDA Wildland fire Assessment")
