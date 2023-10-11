@@ -116,3 +116,14 @@ linkedin_link = "[![LinkedIn](https://img.icons8.com/fluent/48/000000/linkedin.p
 st.sidebar.markdown(email_link + " " + twitter_link + " " + linkedin_link, unsafe_allow_html=True)
 # Link to the publication
 st.sidebar.markdown("Read our detailed [assessment publication](https://github.com/desmond-lartey/Wildfire-Assessment/blob/Fires/README.md).") # Replace YOUR_LINK_HERE with the actual link to the publication
+
+# "About" section in the sidebar
+st.sidebar.markdown("### About")
+st.sidebar.markdown("""
+This web app is maintained by Desmond Lartey. 
+- [GitHub](https://github.com/desmond-lartey)
+- [Twitter](https://twitter.com/Desmondlartey17)
+- [YouTube](YOUR_YOUTUBE_LINK_HERE)
+- [LinkedIn](https://www.linkedin.com/in/desmond-lartey/)
+[Read more about Urban Green](https://agro-nl.com/#urbis-green)
+""", unsafe_allow_html=True)
