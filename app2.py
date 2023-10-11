@@ -105,17 +105,12 @@ st.title("South Africa Wildland Fire Survey Analysis")
 if st.sidebar.button("Plot"):
     plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type)
 
-# Adding copyright notice to sidebar
-st.sidebar.write("---")
-st.sidebar.write("© USDA Wildland fire Assessment")
-
 # Adding clickable logos for email, Twitter, and LinkedIn
-email_link = "[![Email](https://img.icons8.com/fluent/48/000000/email.png)](mailto:larteydesmond@gmail.com)"
-twitter_link = "[![Twitter](https://img.icons8.com/fluent/48/000000/twitter.png)](https://twitter.com/Desmondlartey17)"
-linkedin_link = "[![LinkedIn](https://img.icons8.com/fluent/48/000000/linkedin.png)](https://www.linkedin.com/in/desmond-lartey/)"
-st.sidebar.markdown(email_link + " " + twitter_link + " " + linkedin_link, unsafe_allow_html=True)
-# Link to the publication
-st.sidebar.markdown("Read our detailed [assessment publication](https://github.com/desmond-lartey/Wildfire-Assessment/blob/Fires/README.md).") # Replace YOUR_LINK_HERE with the actual link to the publication
+#email_link = "[![Email](https://img.icons8.com/fluent/48/000000/email.png)](mailto:larteydesmond@gmail.com)"
+#twitter_link = "[![Twitter](https://img.icons8.com/fluent/48/000000/twitter.png)](https://twitter.com/Desmondlartey17)"
+#linkedin_link = "[![LinkedIn](https://img.icons8.com/fluent/48/000000/linkedin.png)](https://www.linkedin.com/in/desmond-lartey/)"
+#st.sidebar.markdown(email_link + " " + twitter_link + " " + linkedin_link, unsafe_allow_html=True)
+
 
 # "About" section in the sidebar
 st.sidebar.markdown("### About")
@@ -127,3 +122,9 @@ This web app is maintained by Desmond Lartey.
 - [LinkedIn](https://www.linkedin.com/in/desmond-lartey/)
 [Read more about Urban Green](https://agro-nl.com/#urbis-green)
 """, unsafe_allow_html=True)
+# Link to the publication
+st.sidebar.markdown("Read our detailed [assessment publication](https://github.com/desmond-lartey/Wildfire-Assessment/blob/Fires/README.md).") # Replace YOUR_LINK_HERE with the actual link to the publication
+
+# Adding copyright notice to sidebar
+st.sidebar.write("---")
+st.sidebar.write("© USDA Wildland fire Assessment")
