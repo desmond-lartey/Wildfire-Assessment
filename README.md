@@ -24,6 +24,41 @@ The assessments will follow the **Integrated Fire Management (IFM)** approach. T
 - Aims to minimize negative impacts while promoting positive impacts, such as ecological health and community safety.
 - Categorizes IFM activities into five groups: Review and Analysis, Risk Reduction, Readiness, Response, and Recovery.
 
+
+## Web Application Documentation
+
+### Overview
+The web application provides a visual analysis interface for the South Africa Wildland Fire Survey data. Users can explore the data based on different categories, questions, demographics, and chart types to gain in-depth insights into the survey responses.
+
+### How to Use
+1. **Category Selection**: On the sidebar, choose a category from the available options (e.g., Review and Analysis, Risk Reduction, etc.).
+2. **Question Selection**: Based on the chosen category, select the question you want to analyze.
+3. **Analysis Type**: Choose between 'correlation' to analyze the relationship between two questions or 'comparative' to analyze one question across a demographic.
+   - If 'correlation' is chosen, a second question must be selected.
+4. **Demographic**: Select the demographic (e.g., Race, Gender, Province, Occupation) for which you want the analysis.
+5. **Chart Type**: Choose the type of chart to visualize the data (heatmap, bar, pie, or line).
+6. Click the **Plot** button to visualize the data based on your selections. The `Plot` button in the sidebar, when clicked, calls the `plot_analysis` function, executing the visualization based on the user's input selections.
+
+
+### Key Decisions & Algorithms
+- **Data Loading**: The dataset is loaded from the provided Excel file.
+- **Data Filtering**: Depending on user choices, the data is filtered to match the selected category, question(s), and demographic.
+- **Correlation Analysis**: If the user chooses the correlation analysis type:
+  - Data for two selected questions is merged based on 'Respondent ID'.
+  - A heatmap is generated using a crosstabulation of the responses, showing how they correlate.
+- **Comparative Analysis**: If the user chooses the comparative analysis type:
+  - The selected question's responses are grouped by the chosen demographic.
+  - A bar, pie, or line chart is generated based on the user's choice to represent the distribution of responses across the demographic.
+
+### Data Analysis and Visualizatio
+- The `plot_analysis` function is defined to handle the plotting based on user selections. 
+  - For a correlation analysis, data for the two selected questions is merged based on the 'Respondent ID'. A heatmap visualizes the correlation between the two questions using a crosstabulation.
+  - For a comparative analysis, data for the selected question is grouped by the selected demographic. Depending on the chosen chart type (bar, pie, or line), the relevant visualization is displayed.
+
+### Contact & Further Information
+For additional details or feedback on the application, refer to the provided contact links on the sidebar, including GitHub, Twitter, and LinkedIn. A direct link to the detailed [assessment publication](https://github.com/desmond-lartey/Wildfire-Assessment/blob/Fires/README.md) is also available for deeper insights.
+
+
 ## Detailed Survey Insights from South Africa
 
 ### Review and Analysis
