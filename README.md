@@ -24,6 +24,36 @@ The assessments will follow the **Integrated Fire Management (IFM)** approach. T
 - Aims to minimize negative impacts while promoting positive impacts, such as ecological health and community safety.
 - Categorizes IFM activities into five groups: Review and Analysis, Risk Reduction, Readiness, Response, and Recovery.
 
+## Detailed Survey Insights from South Africa
+
+### Review and Analysis
+- **58%** of respondents either "somewhat agree" or "strongly agree" that wildland fires have significant unwanted effects in their communities.
+- In the Western Cape province, **11 out of 19 respondents** "strongly agree" regarding the unwanted impacts of wildland fires, suggesting heightened concerns in this region.
+- **Demographic Insight**: Black respondents were particularly concerned about the unwanted effects of wildland fires, with 46% expressing agreement. This could reflect direct experiences or heightened awareness within this demographic.
+- **Gender-based Observation**: Male respondents were more likely to "strongly agree" about the unwanted effects of wildland fires compared to their female counterparts. This might suggest that males in the survey sample have had more direct encounters or negative experiences with wildfires.
+
+### Risk Reduction
+- When considering human-originated wildfires, **arson** is highlighted by 17 respondents as a leading cause, followed closely by **negligence** (7 mentions).
+- For intentionally set fires, **arson** stands out as the primary motive, cited by **41 respondents**. Other motivations include **grazing** (16 mentions) and **fuel management** (11 mentions).
+- **Gender-based Observation**: Female respondents particularly highlighted "arson" as a significant concern behind intentionally set fires. This could be indicative of safety concerns or experiences that females associate with intentionally set fires.
+
+### Readiness
+- There's a diverse perception regarding personnel readiness: **29% "somewhat agree"**, but **23% "strongly disagree"** about having enough personnel to deal with wildland fires.
+- **Western Cape** stands out with **7 out of 19 respondents** "strongly disagreeing" about personnel readiness, pointing to localized concerns.
+- In terms of brigade training, **42 respondents "somewhat agree"** and **33 "strongly agree"** that wildland fire suppression brigades are professionally trained and equipped.
+- **Demographic Insight**: It's notable that Black and Coloured respondents were more likely to "strongly agree" about the brigade's preparedness compared to White respondents. This could reflect differing perceptions based on community-level engagements or experiences with brigade responses.
+
+### Response
+- **36 respondents "strongly agree"** and an equal number "somewhat agree" that a Formal Incident Command System is used in their communities, indicating a structured response mechanism.
+- However, there are regional disparities: **Western Cape** has **8 out of 19 respondents** "strongly agreeing", while provinces like **Eastern Cape** and **Gauteng** show mixed perceptions.
+- **75 respondents** either "strongly agree" or "somewhat agree" that firefighters are adequately equipped, but **17 respondents** express concerns about the quality or availability of equipment.
+- **Gender-based Observation**: Female respondents were slightly more optimistic about the provision of equipment to firefighters compared to males. This optimism might stem from fewer direct encounters with inadequacies or a general positive perception of local firefighting efforts.
+
+### Recovery
+- **42 respondents** either "somewhat agree" or "strongly agree" that there are restoration guidelines for ecosystems affected by wildland fires. However, **32 respondents** have concerns, either "somewhat disagreeing" or "strongly disagreeing".
+- Regional data suggests potential disparities in recovery efforts. For instance, in the **Western Cape**, perceptions are mixed regarding support programs and restoration guidelines after damaging wildfires.
+- **Gender-based Observation**: In the aftermath of fires, Male respondents were more likely to "strongly disagree" about the existence of effective recovery programs compared to females. This could indicate that males in the sample might have had more direct experiences with post-fire landscapes or recovery efforts and found them lacking.
+
 ## Contact Information
 
 For more details, you can contact:
@@ -39,6 +69,11 @@ For more details, you can contact:
 - **Tim Murphy**  
   *Africa Disaster Management Specialist*  
   [timmurphy5000@gmail.com](mailto:timmurphy5000@gmail.com)
+
+- **David Flores, PhD**  
+  *Forest Service Rocky Mountain Research Station*  
+  [david.flores2@usda.gov](mailto:david.flores2@usda.gov)
+
 
 ## Additional Information
 
