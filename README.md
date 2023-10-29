@@ -8,12 +8,6 @@ The **International Programs Office of the United States Forest Service** is und
 
 **[Check the Application version of the assessment here](https://wildfire-assessment.streamlit.app/)**
 
-## Key Findings
-
-- Africa has the highest portion of fire-prone ecosystems in the world.
-- Climate change is leading to warmer, drier conditions.
-- Satellite measurements show that Africa accounts for approximately 67% of the global annual burned area.
-- The impacts of these fires can be both positive and negative, affecting ecological, economic, and socio-cultural perspectives.
 
 ## Assessment Approach
 
@@ -58,8 +52,14 @@ The web application provides a visual analysis interface for the South Africa Wi
 ### Contact & Further Information
 For additional details or feedback on the application, refer to the provided contact links on the sidebar, including GitHub, Twitter, and LinkedIn. A direct link to the detailed [assessment publication](https://github.com/desmond-lartey/Wildfire-Assessment/blob/Fires/README.md) is also available for deeper insights.
 
+## Key Findings
 
-## Detailed Survey Insights from South Africa
+- Africa has the highest portion of fire-prone ecosystems in the world.
+- Climate change is leading to warmer, drier conditions.
+- Satellite measurements show that Africa accounts for approximately 67% of the global annual burned area.
+- The impacts of these fires can be both positive and negative, affecting ecological, economic, and socio-cultural perspectives.
+  
+## Detailed Survey Results from South Africa (5Rs)
 
 ### Review and Analysis
 - **58%** of respondents either "somewhat agree" or "strongly agree" that wildland fires have significant unwanted effects in their communities.
