@@ -44,15 +44,15 @@ The web application provides a visual analysis interface for the South Africa Wi
   - The selected question's responses are grouped by the chosen demographic.
   - A bar, pie, or line chart is generated based on the user's choice to represent the distribution of responses across the demographic.
 
-### Data Analysis and Visualizatio
+### Data Analysis and Visualization
 - The `plot_analysis` function is defined to handle the plotting based on user selections. 
   - For a correlation analysis, data for the two selected questions is merged based on the 'Respondent ID'. A heatmap visualizes the correlation between the two questions using a crosstabulation.
   - For a comparative analysis, data for the selected question is grouped by the selected demographic. Depending on the chosen chart type (bar, pie, or line), the relevant visualization is displayed.
 
-### Contact & Further Information
-For additional details or feedback on the application, refer to the provided contact links on the sidebar, including GitHub, Twitter, and LinkedIn. A direct link to the detailed [assessment publication](https://github.com/desmond-lartey/Wildfire-Assessment/blob/Fires/README.md) is also available for deeper insights.
+### You have questions about the app?
+For additional details or feedback on the application, refer to the provided contact links on the sidebar. A direct link to the detailed [assessment publication](https://github.com/desmond-lartey/Wildfire-Assessment/blob/Fires/README.md) is also available for deeper insights.
 
-## Key Findings
+## General Key Findings
 
 - Africa has the highest portion of fire-prone ecosystems in the world.
 - Climate change is leading to warmer, drier conditions.
