@@ -97,7 +97,7 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type, top_n=2
             ax.set_ylabel("Number of Respondents", fontsize=12)
             #ax.set_xlabel("Responses", fontsize=12)
             ax.legend(title=demo)
-            plt.tight_layout()
+            #plt.tight_layout()
             st.pyplot(fig)
 
 # Main Content
