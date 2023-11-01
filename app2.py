@@ -56,8 +56,8 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type, top_n=2
             fig, ax = plt.subplots(figsize=(12, 8))
             sns.heatmap(crosstab_data, annot=True, cmap="YlGnBu", cbar=True, ax=ax)
             #ax.set_title(f"Correlation between '{question1}' and '{question2}' by {demo}", fontsize=14)
-            ax.set_ylabel("Responses to " + question1, fontsize=12)
-            ax.set_xlabel("Responses to " + question2, fontsize=12)
+            #ax.set_ylabel("Responses to " + question1, fontsize=12)
+            #ax.set_xlabel("Responses to " + question2, fontsize=12)
             plt.tight_layout()
             st.pyplot(fig)
     
