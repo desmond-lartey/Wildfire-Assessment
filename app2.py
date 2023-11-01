@@ -55,7 +55,7 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type, top_n=2
         if chart_type == "heatmap":
             fig, ax = plt.subplots(figsize=(12, 8))
             sns.heatmap(crosstab_data, annot=True, cmap="YlGnBu", cbar=True, ax=ax)
-            ax.set_title(f"Correlation between '{question1}' and '{question2}' by {demo}", fontsize=14)
+            #ax.set_title(f"Correlation between '{question1}' and '{question2}' by {demo}", fontsize=14)
             ax.set_ylabel("Responses to " + question1, fontsize=12)
             ax.set_xlabel("Responses to " + question2, fontsize=12)
             plt.tight_layout()
@@ -84,7 +84,7 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type, top_n=2
             for demo_value, group in q1_data.groupby(demo):
                 fig, ax = plt.subplots(figsize=(10, 8))
                 group["Response"].value_counts().plot(kind="pie", autopct='%1.1f%%', startangle=140, ax=ax)
-                ax.set_title(f"Responses for '{question1}' in {demo} = {demo_value}", fontsize=14)
+                #ax.set_title(f"Responses for '{question1}' in {demo} = {demo_value}", fontsize=14)
                 ax.set_ylabel("")
                 plt.tight_layout()
                 st.pyplot(fig)
