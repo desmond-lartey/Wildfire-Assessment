@@ -115,10 +115,8 @@ if st.sidebar.button("Plot"):
 # "About" section in the sidebar
 st.sidebar.markdown("### About")
 st.sidebar.markdown("""
-This web app is maintained by Desmond Lartey. 
+This web app is maintained by Desmond Lartey. Contact for any Malfunction of the app
 - [GitHub](https://github.com/desmond-lartey)
-- [Twitter](https://twitter.com/Desmondlartey17)
-- [YouTube](YOUR_YOUTUBE_LINK_HERE)
 - [LinkedIn](https://www.linkedin.com/in/desmond-lartey/)
 """, unsafe_allow_html=True)
 # Link to the publication
