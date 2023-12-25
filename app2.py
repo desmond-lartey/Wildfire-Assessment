@@ -1,3 +1,6 @@
+[theme]
+backgroundColor="#010801"
+
 #!/usr/bin/env python
 # coding: utf-8
 
