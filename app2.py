@@ -108,7 +108,7 @@ if st.sidebar.button("Plot"):
 # Your existing function definitions
     def plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type):
     # Your plot analysis code here
-    pass
+        pass
 
 # Automatically call the plot_analysis function
 plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type)
