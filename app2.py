@@ -103,7 +103,7 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type, top_n=2
 # Main Content
 st.title("South Africa Wildland Fire Survey Analysis")
 if st.sidebar.button("Plot"):
-    #plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type)
+    plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type)
 
 # Your existing function definitions
     def plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type):
