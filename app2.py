@@ -125,10 +125,10 @@ st.sidebar.markdown("### About")
 st.sidebar.markdown("""
 This web app is maintained by Desmond Lartey. Contact for any Malfunction of the app
 - [Analysis Explained](https://github.com/desmond-lartey/Wildfire-Assessment/blob/Fires/README.md)
-- [LinkedIn](https://www.linkedin.com/in/desmond-lartey/)
+- [Contact for any Malfunction of the app](https://www.linkedin.com/in/desmond-lartey/)
 """, unsafe_allow_html=True)
 # Link to the publication
-st.sidebar.markdown("Read our detailed [assessment publication](https://github.com/desmond-lartey/Wildfire-Assessment/blob/Fires/README.md).") # Replace YOUR_LINK_HERE with the actual link to the publication
+st.sidebar.markdown("Read our [article here](https://github.com/desmond-lartey/Wildfire-Assessment/blob/Fires/README.md).") # Replace YOUR_LINK_HERE with the actual link to the publication
 
 # Adding copyright notice to sidebar
 #st.sidebar.write("---")
