@@ -89,7 +89,7 @@ For additional details or feedback on the application, refer to the provided con
 - Regional data suggests potential disparities in recovery efforts. For instance, in the **Western Cape**, perceptions are mixed regarding support programs and restoration guidelines after damaging wildfires.
 - **Gender-based Observation**: In the aftermath of fires, Male respondents were more likely to "strongly disagree" about the existence of effective recovery programs compared to females. This could indicate that males in the sample might have had more direct experiences with post-fire landscapes or recovery efforts and found them lacking.
 
-# Snapshot Survey Results from South Africa (5Rs)
+# Summary Results from South Africa (5Rs)
  
 ## Main Findings
 
@@ -147,25 +147,25 @@ For additional details or feedback on the application, refer to the provided con
 8. **What are the opinions on the existence and effectiveness of recovery programs and guidelines?**
    - Insight: Mixed perceptions exist, with males more likely to disagree about the effectiveness of recovery programs.
 
-## Further Development for the Paper
+## Paper Outline
 
 ### Introduction
-Provide a contextual background on the importance of understanding wildland fire impacts in South Africa. Highlight the objectives of the survey and its relevance to stakeholders.
+Contextual background on the importance of understanding wildland fire impacts in South Africa. Highlight the objectives of the survey and its relevance to stakeholders.
 
 ### Methodology
-Detail the survey process, including the demographic breakdown, data collection methods, and analysis techniques used to derive insights from the survey data.
+Detail the survey process, including the demographic breakdown, data collection methods, and analysis techniques used.
 
 ### Results
-Present detailed findings under each main question. Use appropriate charts and graphs to visualize the data and support the narrative.
+Present findings under each main question. Maybe some 2-3 charts and graphs to visualize the data and support the narrative?
 
 ### Discussion
 Analyze the implications of the findings, exploring regional and demographic differences. Discuss potential reasons behind varying perceptions and highlight key trends observed in the data.
 
 ### Recommendations
-Propose actionable steps for improving fire management practices, enhancing readiness, and bolstering recovery programs. Provide tailored recommendations for different regions and demographics based on survey insights.
+Propose actionable steps for improving fire management practices, enhancing readiness, and recovery programs. Maybe tailored recommendations for different regions and demographics based on survey insights?
 
 ### Conclusion
-Summarize the key insights from the survey and their significance for policymakers and stakeholders involved in wildfire management. Emphasize the need for continued research and assessment to address the challenges posed by wildland fires in South Africa.
+Summarize the key insights from the survey and their significance for policymakers and stakeholders involved in wildfire management.
 
 ## Contact Information
 

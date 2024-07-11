@@ -124,7 +124,7 @@ plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_
 st.sidebar.markdown("### About")
 st.sidebar.markdown("""
 This web app is maintained by Desmond Lartey. Contact for any Malfunction of the app
-- [GitHub](https://github.com/desmond-lartey)
+- [Analysis Explained](https://github.com/desmond-lartey/Wildfire-Assessment/blob/Fires/README.md)
 - [LinkedIn](https://www.linkedin.com/in/desmond-lartey/)
 """, unsafe_allow_html=True)
 # Link to the publication
