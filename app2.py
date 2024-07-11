@@ -106,7 +106,7 @@ if st.sidebar.button("Plot"):
     #plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type)
 
 # Automatically call the plot_analysis function
-plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type)
+    plot_analysis(selected_question_1, selected_question_2, selected_demo, selected_chart_type, analysis_type)
 
 # Adding clickable logos for email, Twitter, and LinkedIn
 #email_link = "[![Email](https://img.icons8.com/fluent/48/000000/email.png)](mailto:larteydesmond@gmail.com)"
