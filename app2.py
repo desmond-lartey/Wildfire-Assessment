@@ -25,10 +25,10 @@ selected_category = st.sidebar.selectbox("Select a category:", categories)
 questions = merged_data_df[merged_data_df["Category"] == selected_category]["Question"].unique().tolist()
 selected_question_1 = st.sidebar.selectbox("Select the first question:", questions)
 
-analysis_type = st.sidebar.radio("Choose the type of analysis:", ("correlation", "comparative"))
+analysis_type = st.sidebar.radio("Choose the type of analysis:", ("comparative", "correlation"))
 
 # If correlation, allow the selection of a second question
-if analysis_type == "correlation":
+if analysis_type == "comparative":
     selected_question_2 = st.sidebar.selectbox("Select the second question:", [q for q in questions if q != selected_question_1])
 else:
     selected_question_2 = None
@@ -37,7 +37,7 @@ else:
 demographics = ["Race", "Gender", "Province", "Occupation"]
 selected_demo = st.sidebar.selectbox("Choose a demographic:", demographics)
 
-chart_types = ["heatmap", "bar", "pie", "line"]
+chart_types = ["bar", "heatmap", "pie", "line"]
 selected_chart_type = st.sidebar.selectbox("Choose a chart type:", chart_types)
 
 # Function to plot correlation or comparative analysis
@@ -51,12 +51,12 @@ def plot_analysis(question1, question2, demo, chart_type, analysis_type, top_n=2
         merged_q_data = pd.merge(q1_data, q2_data, on="Respondent ID", how="inner", suffixes=('_q1', '_q2'))
         crosstab_data = pd.crosstab(merged_q_data["Response_q1"], merged_q_data["Response_q2"])
         
-        # Plotting heatmap for correlation
+        # Plotting heatmap for correlation*****0
         if chart_type == "heatmap":
             fig, ax = plt.subplots(figsize=(12, 8))
             sns.heatmap(crosstab_data, annot=True, cmap="YlGnBu", cbar=True, ax=ax)
             #ax.set_title(f"Correlation between '{question1}' and '{question2}' by {demo}", fontsize=14)
-            #ax.set_ylabel("Responses to " + question1, fontsize=12)
+            #ax.set_ylabel("Responses to " + question1, fontsize=12)*
             #ax.set_xlabel("Responses to " + question2, fontsize=12)
             plt.tight_layout()
             st.pyplot(fig)
