@@ -147,25 +147,8 @@ For additional details or feedback on the application, refer to the provided con
 8. **What are the opinions on the existence and effectiveness of recovery programs and guidelines?**
    - Insight: Mixed perceptions exist, with males more likely to disagree about the effectiveness of recovery programs.
 
-## Paper Outline
+## GTR Report in progress ......
 
-### Introduction
-Contextual background on the importance of understanding wildland fire impacts in South Africa. Highlight the objectives of the survey and its relevance to stakeholders.
-
-### Methodology
-Detail the survey process, including the demographic breakdown, data collection methods, and analysis techniques used.
-
-### Results
-Present findings under each main question. Maybe some 2-3 charts and graphs to visualize the data and support the narrative?
-
-### Discussion
-Analyze the implications of the findings, exploring regional and demographic differences. Discuss potential reasons behind varying perceptions and highlight key trends observed in the data.
-
-### Recommendations
-Propose actionable steps for improving fire management practices, enhancing readiness, and recovery programs. Maybe tailored recommendations for different regions and demographics based on survey insights?
-
-### Conclusion
-Summarize the key insights from the survey and their significance for policymakers and stakeholders involved in wildfire management. Maybe a link to fundung support for wildfire management since the USDA has been supporting it for quite a while now...?
 
 ## Contact Information
 
