@@ -165,7 +165,7 @@ Analyze the implications of the findings, exploring regional and demographic dif
 Propose actionable steps for improving fire management practices, enhancing readiness, and recovery programs. Maybe tailored recommendations for different regions and demographics based on survey insights?
 
 ### Conclusion
-Summarize the key insights from the survey and their significance for policymakers and stakeholders involved in wildfire management.
+Summarize the key insights from the survey and their significance for policymakers and stakeholders involved in wildfire management. Maybe a link to fundung support for wildfire management since the USDA has been supporting it for quite a while now...?
 
 ## Contact Information
 
