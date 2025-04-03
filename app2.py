@@ -1,7 +1,7 @@
 
 
 #!/usr/bin/env python
-# coding: utf-8
+# coding: utf-
 
 # Importing necessary libraries
 import streamlit as st
