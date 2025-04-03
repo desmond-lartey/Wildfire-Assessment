@@ -1,5 +1,20 @@
-[theme]
-backgroundColor="#010801"
+import streamlit as st
+
+st.set_page_config(
+    page_title="Your App Title",
+    page_icon=":evergreen_tree:",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    theme={
+        "primaryColor": "#010801",  # Dark green
+        "backgroundColor": "#010801",
+        "secondaryBackgroundColor": "#0A2E0A",
+        "textColor": "#FFFFFF",
+        "font": "sans serif"
+    }
+)
+
+# Rest of your app code goes here
 
 #!/usr/bin/env python
 # coding: utf-8
