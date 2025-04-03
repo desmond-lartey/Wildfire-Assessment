@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 st.set_page_config(
-    page_title="Your App Title",
+    page_title="wildfire-assessment",
     page_icon=":evergreen_tree:",
     layout="wide",
     initial_sidebar_state="expanded"
